@@ -32,8 +32,6 @@ height="71px" alt="Логотип страницы "Седона>
           <div class="feature-blue">
             <img class="photo1" src="img\layer-10.png" width="800px"
   height="256px" alt="Фото города">
-
-
           <h3>Настоящий городок</h3>
              <p>— №1 —Седона-не аттракцион для туристов, там течет своя жизнь</p>
           </div>
@@ -72,24 +70,31 @@ height="256px" alt="Фото моста дьявола">
     <section class="search-hotel">
       <h2>Заинтересовались?</h2>
       <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+      <button class="button-search" type="button">Поиск гостиницы в седоне</button>
       <section class="form-hotel">
         <form method="post" name="hotel-search" action="https://echo.htmlacademy.ru">
           <label id="in"> Дата заезда:
             <input  id="in" name="date-in" type="datetime" placeholder="24 апреля 2017" value="">
           </label>
+          <a class="calendar" href="#"> <img src="img\calendar.svg" ></a>
           <label id="out">
             Дата выезда:
           <input id="out" name="date-out" type="datetime" placeholder="4 июля 2017" value="">
         </label>
-        <label>
-          Взрослые <input name="adult" type="number" placeholder="2" value="">
+        <a class="calendar" href="#"> <img src="img\calendar.svg" ></a>
+        <label id="adult">
+          Взрослые
         </label>
-        <label>
+        <button class="+-" type="button">-</button>
+        <input id="adult" name="adult" type="number" placeholder="2" value="">
+        <button class="+-" type="button">+</button>
+        <label id="children">
           Дети
-          <input type="number" placeholder="0" value"">
-        </label>
+          </label>
+        <button class="+-" type="button">-</button>  <input id="children" type="number" placeholder="0" value""><button class="+-" type="button">+</button>
+
+        <button type="submit" class="search"> Найти</button>
       </section>
-      <button class="button-search" type="button">Поиск гостиницы в седоне</div>
     </section>
   <!--  <section class="map">
       <img class="map" src="img\map.jpg" alt="Карта седоны">
