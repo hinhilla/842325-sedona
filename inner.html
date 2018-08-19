@@ -23,8 +23,9 @@
       <h1 class="visually-hidden">Гостиницы</h1>
       <section class="filtres">
         <h2 class="visually-hidden">Фильтры</h2>
-        <div class="infrastructure">
-          <h3>Инфраструктура:</h3>
+        <form method="post" class="filtres-form" action="https://echo.htmlacademy.ru">
+        <fieldset class="infrastructure">
+          <legend>Инфраструктура:</legend>
           <ul>
             <li class="checkbox" >
               <label> <input type="checkbox" name="pool" checked class="visually-hidden">Бассейн </label>
@@ -36,9 +37,9 @@
               <label> <input type="checkbox" name="wi-fi" class="visually-hidden"> Wi-fi</label>
             </li>
           </ul>
-        </div>
-        <div class="type-of-housing">
-          <h3>Тип жилья:</h3>
+        </fieldset>
+        <fieldset class="type-of-housing">
+          <legend>Тип жилья:</legend>
           <ul>
             <li class="checkbox">
                 <label> <input type="checkbox" name="hotel" checked class="visually-hidden">Гостиница </label>
@@ -48,14 +49,21 @@
             <li class="checkbox">
                 <label> <input type="checkbox" name="apartments" checked class="visually-hidden">Апартаменты</label></li>
           </ul>
-        </div>
-        <div class="cost-per-day">
-          <h3>Стоимость в сутки</h3>
-          <form class="cost-form" action="https://echo.htmlacademy.ru" method="post">
+        </fieldset>
+        <fieldset class="cost">
+          <fieldset class="cost-per-day">
+          <legend>Стоимость в сутки</legend>
             <label>от<input class="from" type="number" name="from" placeholder="0" value=""></label>
             <label>до<input class="before" type="number" name="before" placeholder="3000" value=""></label>
-          <button class="button-results">Показать</button>
-        </div>
+          </fieldset>
+          <fieldset >
+            <legend class="visually-hidden">Ранжирование стоимости</legend>
+              <input type="range" class="range">
+              <button type="button" class="range-batton1">
+              <button type="button" class="range-batton2">
+          </fieldset>
+        </fieldset>
+          <button type="submit" class="button-results">Показать</button>
       </section>
       <section class="sort">
         <h2> Сортировка</h2>
@@ -74,8 +82,10 @@
             <h3>Amara Resort & Spa</h3>
             <h4>Гостиница</h4>
             <span>от 4000 р.</span>
-            <button class="button-detail">Подробнее</button>
-            <button class="button-book">Забронировать</button>
+            <button type="button" class="button-detail">Подробнее</button>
+            <button type="button" class="button-book">Забронировать</button>
+            <!--<a href="#" class="button-detail">Подробнее</a>
+            <a href="#" class="button-book">Забронировать</a><-->
             <span class="rating">Рейтинг:8,5</span>
           </li>
           <li>
@@ -84,8 +94,10 @@
             <h3>Desert Quail Inn</h3>
           <h4>Мотель</h4>
           <span>от 3000 р.</span>
-          <button class="button-detail">Подробнее</button>
-          <button class="button-book">Забронировать</button>
+          <button type="button" class="button-detail">Подробнее</button>
+          <button  type="button" class="button-book">Забронировать</button>
+          <!--<a href="#" class="button-detail">Подробнее</a>
+          <a href="#" class="button-book">Забронировать</a><-->
           <span class="rating">Рейтинг:8,9</span>
           </li>
           <li>
@@ -94,8 +106,10 @@
             <h3>Villas at Poco Diablo</h3>
           <h4>Апартаменты</h4>
           <span>от 2000 р.</span>
-          <button class="button-detail">Подробнее</button>
-          <button class="button-book">Забронировать</button>
+          <button type="button" class="button-detail">Подробнее</button>
+          <button type="button" class="button-book">Забронировать</button>
+          <!--<a href="#" class="button-detail">Подробнее</a>
+          <a href="#" class="button-book">Забронировать</a><-->
           <span class="rating">Рейтинг:9,2</span>
           </li>
         </ul>
