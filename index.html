@@ -21,7 +21,7 @@ height="71px" alt="Логотип страницы "Седона>
 </header>
 <main class="page-main">
   <div class="background-logo">
-    <img class="logo" src="#logo" alt="Welcome to gorgeous Sedona 'Because the great canyon sucks'">
+    <img class="logo" src="img\intro-welcome.svg" alt="Welcome to gorgeous Sedona 'Because the great canyon sucks'">
   </div>
   <h1 class="visually-hidden">Добро пожаловать в Город Седона</h1>
   <p>Седона-небольшой городок в Аризоне, заслуживающий большего!</p>
@@ -72,11 +72,28 @@ height="256px" alt="Фото моста дьявола">
     <section class="search-hotel">
       <h2>Заинтересовались?</h2>
       <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-      <button class="button-search">Поиск гостиницы в седоне</div>
+      <section class="form-hotel">
+        <form method="post" name="hotel-search" action="https://echo.htmlacademy.ru">
+          <label id="in"> Дата заезда:
+            <input  id="in" name="date-in" type="datetime" placeholder="24 апреля 2017" value="">
+          </label>
+          <label id="out">
+            Дата выезда:
+          <input id="out" name="date-out" type="datetime" placeholder="4 июля 2017" value="">
+        </label>
+        <label>
+          Взрослые <input name="adult" type="number" placeholder="2" value="">
+        </label>
+        <label>
+          Дети
+          <input type="number" placeholder="0" value"">
+        </label>
+      </section>
+      <button class="button-search" type="button">Поиск гостиницы в седоне</div>
     </section>
-    <section class="map">
-      <img class="map" src="#map" alt="Карта седоны">
-    </section>
+  <!--  <section class="map">
+      <img class="map" src="img\map.jpg" alt="Карта седоны">
+    </section><-->
 </main>
 <footer class="main-footer">
   <p class="hashtag">#visitSEDONA</p>
@@ -88,8 +105,9 @@ height="256px" alt="Фото моста дьявола">
   </ul>
   </div>
   <p class="footer-copyright">
-    <a class="button" href="https://up.htmlacademy.ru"> HTML Academy</a>
+    <a class="academy" href="https://up.htmlacademy.ru"> HTML Academy</a>
   </p>
 </footer>
+
   </body>
 </html>
