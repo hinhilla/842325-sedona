@@ -13,6 +13,10 @@ a {
   text-decoration: none;
   color: inherit;
 }
+.logo{
+  width:459px;
+  height: 353px;
+}
 .main-navigation {
   font-size: 14px;
   line-height: 26px;
@@ -40,14 +44,17 @@ font-style: bold;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+  text-align: center;
 }
 .reasons{
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
+  text-align: center;
 }
 .features-list{
   list-style: none;
+  text-align: center;
 }
 .feature-item {
   text-align: center;
@@ -57,6 +64,10 @@ font-style: bold;
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
+}
+.photo1, .photo2{
+  width:800px;
+  height:256px;
 }
 .feature-blue{
   color: white;
@@ -79,6 +90,7 @@ font-style: bold;
 .search-hotel{
   background-color: white;
   color: black;
+  text-align: center;
 }
 .search-hotel h2{
   font-size: 30px;
@@ -91,6 +103,7 @@ font-style: bold;
   color:white;
   width:568px;
   height: 86px;
+  font-weight: 700;
   background-color:#766357;
   vertical-align: middle;
   text-transform: uppercase;
@@ -102,7 +115,6 @@ font-style: bold;
 .button-search:focus{
   background-color: #503e33;
   color:#928a85;
-
 }
 .form-hotel{
   font-weight: 700;
@@ -114,6 +126,7 @@ font-style: bold;
   color:black; /*не работает*/
   background-color: #f2f2f2;
   border: 1px solid #f2f2f2;
+  font: inherit;
   font-size: 14px;
   line-height: 26px;
 }
@@ -134,6 +147,7 @@ font-style: bold;
   height: 38px;
   text-align: center;
   border: none;
+  /* по моей задумке, это правило должно задавать общий размер для кнопок +- и интпутов с цифрой. но они остаются разного размера */
 
 }
 .plus-minus{
@@ -153,6 +167,8 @@ font-style: bold;
 }
 .search{
   font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
   width: 458px;
   height: 58px;
   color: white;
@@ -214,5 +230,38 @@ font-style: bold;
 .sort .choose:active{
   color:#81b3d2;
   border-bottom: none;
-  /* мой active не рабоает */
+  /* мой active не рабоает.к сожалению */
+}
+.button-detail, .button-book{
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+}
+.button-detail{
+  background-color: #81b3d2;
+  width:110px;
+  height: 27px;
+    border: none;
+}
+.button-detail:hover{
+  background-color: #669ec0;
+}
+.button-detail:focus{
+  background-color: #5496bd;
+}
+
+.button-book{
+background-color: #766357;
+width: 142px;
+height: 27px;
+  border: none;
+}
+.button-book:hover{
+background-color: #604e43;
+}
+.button-book:focus{
+background-color: #503e33;
 }
