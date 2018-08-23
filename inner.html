@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+      <link href="css\style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -15,7 +18,7 @@
           <li><a href="info.html">Информация</a></li>
           <li><a href="photo-and-video.html">Фото и видео</a></li>
           <li><a href="map-of-state.html">Карта штата</a></li>
-          <li><a>Гостиница</a></li>
+          <li><a:active>Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -67,11 +70,10 @@
       </section>
       <section class="sort">
         <h2> Сортировка</h2>
-        <ul>
-          <li class="chosen-cort">По цене</li>
-          <li class="not-chosen-sort">По типу</li>
-          <li class="not-chosen-sort">По рейтингу</li>
-        </ul>
+        <p class="resuls-search"> Найдено:3</p>
+        <button type="button" class="choose choose:active">По цене</button>
+        <button type="button" class="choose">По типу</button>
+        <button type="button" class="choose">По рейтингу</button>
       </section>
       <section class="found">
         <h2 class="visually-hidden"> Результаты поиска</h2>

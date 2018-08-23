@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+
+    <link href="css\style.css" rel="stylesheet">
   </head>
   <body>
 <header class="main-header">
@@ -15,7 +18,7 @@ height="71px" alt="Логотип страницы "Седона>
       <li><a href="info.html">Информация</a></li>
       <li><a href="photo-and-video.html">Фото и видео</a></li>
       <li><a href="map-of-state.html">Карта штата</a></li>
-      <li><a href="inner.html">Гостиница</a></li>
+      <li><a href="inner.html">Гостиницы</a></li>
     </ul>
   </nav>
 </header>
@@ -24,10 +27,11 @@ height="71px" alt="Логотип страницы "Седона>
     <img class="logo" src="img\intro-welcome.svg" alt="Welcome to gorgeous Sedona 'Because the great canyon sucks'">
   </div>
   <h1 class="visually-hidden">Добро пожаловать в Город Седона</h1>
-  <p>Седона-небольшой городок в Аризоне, заслуживающий большего!</p>
+  <p class="introduce">Седона-небольшой городок в Аризоне, заслуживающий большего!</p>
   <section>
     <h2 class="visually-hidden">Преимущества</h2>
-    <ul class="features">
+    <p class="reasons">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+    <ul class="features-list">
       <li class="feature-items">
           <div class="feature-blue">
             <img class="photo1" src="img\layer-10.png" width="800px"
@@ -85,13 +89,15 @@ height="256px" alt="Фото моста дьявола">
         <label id="adult">
           Взрослые
         </label>
-        <button class="+-" type="button">-</button>
-        <input id="adult" name="adult" type="number" placeholder="2" value="">
-        <button class="+-" type="button">+</button>
+        <button class="form-buttom plus-minus" type="button">-</button>
+        <input class="form-buttom" id="adult" name="adult" type="text" placeholder="2" value="">
+        <button class="form-buttom plus-minus" type="button">+</button>
         <label id="children">
           Дети
           </label>
-        <button class="+-" type="button">-</button>  <input id="children" type="number" placeholder="0" value""><button class="+-" type="button">+</button>
+        <button class="form-buttom plus-minus" type="button">-</button>
+        <input class="form-buttom" id="children" type="text" placeholder="0" value"">
+        <button class="form-buttom plus-minus" type="button">+</button>
         <button type="submit" class="search"> Найти</button>
       </section>
     </section>
