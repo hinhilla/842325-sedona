@@ -7,26 +7,48 @@ body {
   font-weight: 400;
   color: #000000;
   text-transform: uppercase;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
+}
+.background-logo{
+  background-color: #695b59;
+  background-image: url("../img/background-photo.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  width: 1200px;
+}
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+.filtres{
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700px;
+  color: #ffffff;
+  background-color: #686d73;
+  background-image: url("../img/filter-background.jpg");
+  width: 1200px;
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 a {
   text-decoration: none;
   color: inherit;
+  font: inherit;
 }
 .logo{
   width:459px;
-  height: 353px;
 }
 .main-navigation {
   font-size: 14px;
   line-height: 26px;
-  color: #000000;
-font-style: bold;
+  font-style: 700;
   background-color: #ffffff;
 }
-
 .site-navigation{
-  color: black;
   list-style: none;
   font-weight: 700;
 }
@@ -36,9 +58,8 @@ font-style: bold;
 .site-navigation a:focus{
   color: (0, 0, 0, 0.3);
 }
-.site-navigation a:active{
+.site-navigation .hotel-active{
   color: #766357;
-  /* на странице с отелями "гостиницы" должны быть этого цвета, но вот как его применить?*/
 }
 .introduce{
   font-size: 21px;
@@ -67,10 +88,9 @@ font-style: bold;
 }
 .photo1, .photo2{
   width:800px;
-  height:256px;
 }
 .feature-blue{
-  color: white;
+  color: #ffffff;
   background-color: #81b3d2;
 }
 .feature-blue h3 {
@@ -79,7 +99,7 @@ font-style: bold;
   font-weight: 700;
 }
 .feature-grey{
-  color: black;
+  color: #000000;
   background-color: #eeeeee;
 }
 .feature-gray h3 {
@@ -88,8 +108,8 @@ font-style: bold;
   font-weight: 700;
 }
 .search-hotel{
-  background-color: white;
-  color: black;
+  background-color: #ffffff;
+  color: #000000;
   text-align: center;
 }
 .search-hotel h2{
@@ -100,9 +120,8 @@ font-style: bold;
 .button-search{
   font-size: 21px;
   line-height: 26px;
-  color:white;
+  color:#ffffff;
   width:568px;
-  height: 86px;
   font-weight: 700;
   background-color:#766357;
   vertical-align: middle;
@@ -123,7 +142,7 @@ font-style: bold;
   line-height: 26px;
 }
 .form-hotel input{
-  color:black; /*не работает*/
+  color:#000000; /*все еще не работает*/
   background-color: #f2f2f2;
   border: 1px solid #f2f2f2;
   font: inherit;
@@ -134,34 +153,26 @@ font-style: bold;
   font: inherit;
   background-color:#ebebeb;
   border: 1px solid #ebebeb;
-  }
 }
 .form-hotel input:focus{
-  background-color: white;
+  background-color: #ffffff;
   border: 1px solid #e5e5e5;
-  /* почему-то остается серым, хотя я полагала, что эти действия сделают инпуты белыми */
 }
 .form-buttom{
   background-color: #f2f2f2;
   width: 38px;
-  height: 38px;
   text-align: center;
   border: none;
-  /* по моей задумке, это правило должно задавать общий размер для кнопок +- и интпутов с цифрой. но они остаются разного размера */
-
 }
 .plus-minus{
   color:#a9a9a9;
   font-size: 14px;
   line-height: 26px;
-
 }
 .plus-minus:hover{
-  color:black;
+  color:#000000;
 }
-.plus-minus:focus{
-  color:#81b3d2;
-}
+.plus-minus:focus,
 .plus-minus:active{
   color:#81b3d2;
 }
@@ -170,8 +181,7 @@ font-style: bold;
   line-height: 26px;
   font-weight: 700;
   width: 458px;
-  height: 58px;
-  color: white;
+  color: #ffffff;
   background-color: #81b3d2;
   vertical-align: middle;
   text-transform: uppercase;
@@ -192,7 +202,6 @@ font-style: bold;
   background-color: transparent;
   color:white;
   width: 133px;
-  height: 32px;
 }
 .button-results:hover{
   background-color: white;
@@ -206,13 +215,12 @@ font-style: bold;
 }
 .resuls-search{
   width: 21px;
-  height: 26px;
   color: black;
 }
 .sort .choose{
   font-size: 12px;
   line-height: 18px;
-  color: (0, 0, 0, 0.3);  /* почему текст не стал прозрачнее на 30%? */
+  color: rgba(0, 0, 0, 0.3);
   border: none;
   border-bottom: dashed;
   border-color: #81b3d2;
@@ -227,10 +235,15 @@ font-style: bold;
   color: black;
   border-bottom: none;
 }
-.sort .choose:active{
+.sort .choose-active{
   color:#81b3d2;
   border-bottom: none;
-  /* мой active не рабоает.к сожалению */
+}
+.list-found{
+  list-style: none;
+}
+.list-found h3{
+  margin:0;
 }
 .button-detail, .button-book{
   font-size: 14px;
@@ -243,8 +256,7 @@ font-style: bold;
 .button-detail{
   background-color: #81b3d2;
   width:110px;
-  height: 27px;
-    border: none;
+  border: none;
 }
 .button-detail:hover{
   background-color: #669ec0;
@@ -256,12 +268,33 @@ font-style: bold;
 .button-book{
 background-color: #766357;
 width: 142px;
-height: 27px;
-  border: none;
+border: none;
 }
 .button-book:hover{
 background-color: #604e43;
 }
 .button-book:focus{
 background-color: #503e33;
+}
+.rating{
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 400;
+}
+.text-behavior{
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+.text-behavior:hover, .text-behavior:focus{
+  color: #81b3d2;
+}
+.text-behavior:active{
+  color:rgba(0, 0, 0, 0.3);
+}
+.hashtag{
+  font-size: 21px;
+  line-height: 25px;
+  font-weight: 700;
 }
