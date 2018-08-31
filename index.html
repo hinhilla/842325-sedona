@@ -11,14 +11,16 @@
     <header class="main-header">
        <nav class="main-navigation">
          <a class="main-header-logo">
-         <img src="img/logo.svg"  width="140px" height="71px" alt="Логотип страницы "Седона>
+         <img class="main-logo" src="img/logo.svg"  width="140px" height="71px" alt="Логотип страницы "Седона>
          </a>
+         <div class="conteiner">
          <ul class="site-navigation">
            <li><a href="info.html">Информация</a></li>
            <li><a href="photo-and-video.html">Фото и видео</a></li>
            <li><a href="map-of-state.html">Карта штата</a></li>
            <li><a href="inner.html">Гостиницы</a></li>
          </ul>
+         </div>
        </nav>
    </header>
    <main class="page-main">
@@ -33,10 +35,11 @@
        <ul class="features-list">
           <li class="feature-items">
             <div class="feature-blue">
-              <img class="photo1" src="img/layer-10.png" alt="Фото города">
               <h3>Настоящий городок</h3>
               <p>— №1 —Седона-не аттракцион для туристов, там течет своя жизнь</p>
+              <img class="photo1" src="img/layer-10.png" alt="Фото города">
             </div>
+            <div class="advice-list">
             <div class="advice-list-1">
               <h4>Жилье</h4>
               <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
@@ -49,24 +52,27 @@
               <h4>Сувениры</h4>
               <p>Не только китайского, но и местного производства!</p>
             </div>
+          </div>
          </li>
          <li class="feature-blue">
            <img class="photo2" src="img/layer-5.png" alt="Фото моста дьявола">
            <h3>Там есть мост дьявола</h3>
            <p>— №2 —Да, по нему можно пройти! Если конечно вы осмелитесь</p>
          </li>
-         <li class="feature-grey">
+         <ul class="feature-grey">
+         <li class="feature-grey-1">
            <h3>Небольшая площадь</h3>
            <p>— №3 — Все достопримечательности находятся очень близко</p>
          </li>
-         <li class="feature-grey">
+         <li class="feature-grey-2">
            <h3>Красивая дорога</h3>
            <p> — №4 —Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
          </li>
-         <li class="feature-grey">
+         <li class="feature-grey-3">
           <h3> Мало туристов</h3>
           <p>— №5 — Большинство едет в гранд каньон и толпится там</p>
          </li>
+       </ul>
       </ul>
       <section class="search-hotel">
         <h2>Заинтересовались?</h2>
@@ -74,7 +80,8 @@
         <button class="button-search" type="button">Поиск гостиницы в седоне</button>
         <section class="form-hotel">
           <form method="post" name="hotel-search" action="https://echo.htmlacademy.ru">
-          <label id="in"> Дата заезда:
+          <label id="in">
+            Дата заезда:
             <input  id="in" name="date-in" type="datetime" placeholder="24 апреля 2017" value="">
           </label>
           <a class="calendar" href="#">

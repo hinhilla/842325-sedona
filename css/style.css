@@ -8,6 +8,7 @@ body {
   color: #000000;
   text-transform: uppercase;
   background-color: #ffffff;
+  width: 1200px;
 }
 .background-logo{
   background-color: #695b59;
@@ -81,7 +82,8 @@ a {
   text-align: center;
 }
 
-.feature-item h3 {
+.feature-item h3,
+.advice-list h4 {
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
@@ -102,7 +104,7 @@ a {
   color: #000000;
   background-color: #eeeeee;
 }
-.feature-gray h3 {
+.feature-grey h3 {
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
@@ -297,4 +299,115 @@ background-color: #503e33;
   font-size: 21px;
   line-height: 25px;
   font-weight: 700;
+}
+
+
+/* сеточные стили */
+.body{
+  width: 1200px;
+}
+.main-header{
+  margin:0;
+  padding:0;
+}
+.main-navigation{
+  width: 1200px;
+  min-height:56px;
+  margin-bottom: 76px;
+}
+.site-navigation{
+  display: flex;
+  justify-content: space-between;
+
+  list-style:none;
+}
+
+.features-list {
+  margin: 0;
+  padding: 0;
+}
+.feature-blue{
+  width: 1200px;
+  display: flex;
+}
+.feature-blue p{
+  width: 304px;
+}
+
+
+.advice-list{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  padding:162px 65px 87px 75px;
+h4{
+  margin: 0;
+}
+}
+.advice-list-1{
+  width:304px;
+  margin-right: 135px;
+  padding: 0;
+}
+.advice-list-2{
+  width:304px;
+  margin-right: 125px;
+  padding: 0;
+}
+.advice-list-3{
+  width:304px;
+margin: 0;
+padding: 0;
+}
+
+
+.feature-grey{
+
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 53px 78px 69px 97px;
+
+}
+.feature-grey-1{
+  margin: 0;
+  width: 313.91px;
+}
+.feature-grey-2{
+  margin: 0;
+  width: 306px;
+}
+.feature-grey-3{
+  margin: 0;
+  width: 295.22px;
+}
+.search-hotel{
+  width: 568;
+  margin: auto;
+}
+.form-hotel{
+  display: flex;
+  flex-direction:column;
+}
+
+.main-footer{
+  padding:  37px 101px 36px 133px;
+  display: flex;
+
+}
+.hashtag{
+  margin: 0;
+  width: 149.33px;
+  margin-right: 256px;
+}
+.footer-social{
+  width: 46px;
+  margin-right: 229px;
+  list-style: none;
+}
+.footer-copyright{
+  margin: 0;
+  width: 197px;
 }
