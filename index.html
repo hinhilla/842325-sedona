@@ -8,69 +8,83 @@
        <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
-       <nav class="main-navigation">
-         <a class="main-header-logo">
-         <img class="main-logo" src="img/logo.svg"  width="140px" height="71px" alt="Логотип страницы "Седона>
-         </a>
-         <div class="conteiner">
-         <ul class="site-navigation">
-           <li><a href="info.html">Информация</a></li>
-           <li><a href="photo-and-video.html">Фото и видео</a></li>
-           <li><a href="map-of-state.html">Карта штата</a></li>
-           <li><a href="inner.html">Гостиницы</a></li>
-         </ul>
-         </div>
-       </nav>
-   </header>
-   <main class="page-main">
-     <div class="background-logo">
-       <img class="logo" src="img\intro-welcome.svg" alt="Welcome to gorgeous Sedona 'Because the great canyon sucks'">
-     <h1 class="visually-hidden">Добро пожаловать в Город Седона</h1>
-     <p class="introduce">Седона-небольшой городок в Аризоне, заслуживающий большего!</p>
-     <section>
+    <div class="page-content">
+      <header class="main-header">
+        <nav class="main-navigation">
+           <a class="main-header-logo">
+             <img class="main-logo" src="img/logo.svg"  alt="Логотип страницы "Седона"">
+           </a>
+           <ul class="site-navigation">
+             <li  class="left-side-navigation"><a href="info.html">Информация</a></li>
+             <li  class="left-side-navigation"><a href="photo-and-video.html">Фото и видео</a></li>
+             <li class="right-side-navigation"><a href="map-of-state.html">Карта штата</a></li>
+             <li class="right-side-navigation"><a href="inner.html">Гостиницы</a></li>
+           </ul>
+        </nav>
+      </header>
+      <main class="page-main">
+        <div class="background-logo">
+          <img class="logo" src="img\intro-welcome.svg" alt="Welcome to gorgeous Sedona 'Because the great canyon sucks'">
+        </div>
+        <div class="welcome">
+          <h1 class="visually-hidden">Добро пожаловать в Город Седона</h1>
+          <p class="introduce">Седона-небольшой городок в Аризоне, заслуживающий большего!</p>
+          <p class="reasons">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+       </div>
+      <section>
        <h2 class="visually-hidden">Преимущества</h2>
-       <p class="reasons">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-     </div>
        <ul class="features-list">
           <li class="feature-items">
             <div class="feature-blue">
-              <h3>Настоящий городок</h3>
-              <p>— №1 —Седона-не аттракцион для туристов, там течет своя жизнь</p>
-              <img class="photo1" src="img/layer-10.png" alt="Фото города">
+              <div class="blue-text">
+                <h3>Настоящий городок</h3>
+                <span class="number">— №1 —</span>
+                <p>Седона-не аттракцион для туристов, там течет своя жизнь</p>
+              </div>
+              <div class="blue-photo">
+                <img class="photo1" src="img/layer-10.png" alt="Фото города">
+              </div>
             </div>
             <div class="advice-list">
-            <div class="advice-list-1">
-              <h4>Жилье</h4>
-              <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              <div class="advice-list-items icon-1">
+                <h4>Жилье</h4>
+                <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              </div>
+              <div class="advice-list-items icon-2">
+                <h4>Еда</h4>
+                <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              </div>
+              <div class="advice-list-items icon-3">
+                <h4>Сувениры</h4>
+                <p>Не только китайского, но и местного производства!</p>
+              </div>
             </div>
-            <div class="advice-list-2">
-              <h4>Еда</h4>
-              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-            </div>
-            <div class="advice-list-3">
-              <h4>Сувениры</h4>
-              <p>Не только китайского, но и местного производства!</p>
-            </div>
-          </div>
          </li>
          <li class="feature-blue">
-           <img class="photo2" src="img/layer-5.png" alt="Фото моста дьявола">
-           <h3>Там есть мост дьявола</h3>
-           <p>— №2 —Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+           <div class="blue-photo">
+             <img class="photo2" src="img/layer-5.png" alt="Фото моста дьявола">
+           </div>
+           <div class="blue-text">
+             <h3>Там есть мост дьявола</h3>
+             <span class="number">— №2 —</span>
+             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          </div>
          </li>
          <ul class="feature-grey">
-         <li class="feature-grey-1">
+         <li class="feature-grey-items">
            <h3>Небольшая площадь</h3>
-           <p>— №3 — Все достопримечательности находятся очень близко</p>
+           <span class="number">— №3 —</span>
+           <p> Все достопримечательности находятся очень близко</p>
          </li>
-         <li class="feature-grey-2">
+         <li class="feature-grey-items">
            <h3>Красивая дорога</h3>
-           <p> — №4 —Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+           <span> — №4 —</span>
+           <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
          </li>
-         <li class="feature-grey-3">
+         <li class="feature-grey-items">
           <h3> Мало туристов</h3>
-          <p>— №5 — Большинство едет в гранд каньон и толпится там</p>
+          <span class="number">— №5 —</span>
+          <p>Большинство едет в гранд каньон и толпится там</p>
          </li>
        </ul>
       </ul>
@@ -117,23 +131,23 @@
           <button type="submit" class="search"> Найти</button>
         </section>
       </section>
-  <!--  <section class="map">
+   <section class="map">
       <img class="map" src="img\map.jpg" alt="Карта седоны">
-    </section><-->
+    </section><
 </main>
 <footer class="main-footer">
   <p class="hashtag">#visitSEDONA</p>
   <div class="footer-social">
-  <ul>
-    <li> <a class="social-button-1" href="#">Твиттер </a></li>
-    <li> <a class="social-button-2" href="#"> Фейсбук</a></li>
-    <li> <a class="social-button-3" href="#"> Ютуб </a></li>
+  <ul class="footer-social">
+    <li> <a class="social-button social-button-1" href="#">Твиттер</a></li>
+    <li> <a class="social-button social-button-2" href="#">Фейсбук</a></li>
+    <li> <a class="social-button social-button-3" href="#">Ютуб</a></li>
   </ul>
   </div>
   <p class="footer-copyright">
     <a class="academy" href="https://up.htmlacademy.ru"> HTML Academy</a>
   </p>
 </footer>
-
+</div>
   </body>
 </html>
