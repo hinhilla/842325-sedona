@@ -83,7 +83,7 @@ padding-bottom: 56px;
   margin: 0 auto;
   margin-bottom: 43px;
   text-align: center;
-  width: 450px;
+  max-width: 450px;
 
 }
 .reasons{
@@ -658,7 +658,7 @@ fill: rgba(0, 0, 0, 0.3);
 
 
 
-/*  дальше вторая страница- на ней все очень сыро*/
+/*  дальше вторая страница*/
 .inner-column{
   display: flex ;
   padding: 32px 72px;
@@ -667,13 +667,46 @@ fill: rgba(0, 0, 0, 0.3);
 .inner-column fieldset{
   margin: 0;
   padding: 0;
+}
+.infrastructure legend,
+.type-of-housing legend{
+  margin-bottom: 29px;
+}
+.infrastructure li:not(:last-child),
+.type-of-housing li:not(:last-child){
+  margin-bottom: 23px;
 
+}
+.infrastructure li,
+.type-of-housing li{
+
+  padding-left: 39px;
+}
+.checkbox-on,
+.checkbox-of{
+  position: relative;
+}
+.checkbox-on svg,
+.checkbox-of svg{
+  position: absolute;
+  left: 0;
+  fill: #ffffff;
+}
+
+.checkbox-on svg:hover,
+.checkbox-of svg:hover{
+  fill: #ffffff;
+}
+.checkbox-on svg:focus,
+.checkbox-of svg:focus{
+  fill: #656666;
 }
 .filtres{
   width:100%;
 }
 ul{
   list-style: none;
+  padding: 0;
 }
 .infrastructure,
 .type-of-housing{
@@ -705,7 +738,7 @@ ul{
 .cost-per-day{
 
     border: none;
-    margin: 0 auto;
+
 }
 .cost-per-day input{
   width: 159px;
@@ -713,7 +746,7 @@ ul{
 }
 .cost-per-day div{
   display:flex;
-  margin: 0 auto;
+
 
 }
 .inner-column{
@@ -767,9 +800,7 @@ padding-top: 31px;
 .list-found{
   padding: 0;
 }
-/* .inner-column-results li{
-list-style: none;
-} */
+
 .inner-column-photo{
   margin-left:72px;
 }
