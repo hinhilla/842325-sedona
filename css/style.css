@@ -682,7 +682,38 @@ fill: rgba(0, 0, 0, 0.3);
 
   padding-left: 39px;
 }
-.checkbox-on,
+
+.checkbox label {
+  padding-left: 20px;
+  position: relative;
+}
+
+.checkbox label::before {
+  content: '';
+  display: block;
+  width: 23px;
+  height: 23px;
+  background-image: url(../img/checkbox-of.svg);
+  position: absolute;
+  left: -17px;
+  top: -2px;
+  background-position: contain;
+}
+input:checked+label::before {
+  content: '';
+  display: block;
+  width:27px;
+  height:23px;
+  background-image: url(../img/checkbox-on.svg);
+  position: absolute;
+  left: -17px;
+  top: -2px;
+  background-position: contain;
+}
+
+
+}
+/* .checkbox-on,
 .checkbox-of{
   position: relative;
 }
@@ -700,7 +731,7 @@ fill: rgba(0, 0, 0, 0.3);
 .checkbox-on svg:focus,
 .checkbox-of svg:focus{
   fill: #656666;
-}
+} */
 .filtres{
   width:100%;
 }
@@ -713,10 +744,33 @@ ul{
   width: 25%;
   border: none;
 }
+.cost-per-day legend{
+  margin-bottom: 16px;:
+}
+.price-controls{
+  height: 36px;
+  margin-bottom: 20px;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+    width: 318px;
+
+}
+
+.price-controls label {
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+
+}
+.price-controls .before,
+.price-controls .from {
+ width: 20px;
+  padding-left: 65px;
+}
 .cost{
   border:none;
   width: 50%;
-  text-align: right;
+
 }
 .range-group{
   border:none;
@@ -726,7 +780,7 @@ ul{
   background-color: transparent;
   color:#ffffff;
   text-align: center;
-  border-color: #ffffff;
+  border: none;
 
 }
 .from{
@@ -740,15 +794,10 @@ ul{
     border: none;
 
 }
-.cost-per-day input{
-  width: 159px;
-  height: 32px;
-}
-.cost-per-day div{
-  display:flex;
 
 
-}
+
+
 .inner-column{
   position: relative;
   min-height: 217px;
@@ -807,7 +856,6 @@ padding-top: 31px;
 .inner-column-hotel{
   width:780px;
   padding-right:15px;
-  margin-left:31px;
   margin-right: 15px;
   text-align: left;
 }
