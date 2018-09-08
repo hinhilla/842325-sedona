@@ -74,7 +74,9 @@
           </fieldset>
           <fieldset class="range-group">
             <legend class="visually-hidden">Ранжирование стоимости</legend>
-              <input type="range" class="range">
+              <div class="range">
+                <div class="bar"></div>
+              </div>
               <button type="button" class="range-batton1">
               <button type="button" class="range-batton2">
           </fieldset>
@@ -83,12 +85,17 @@
         </div>
       </section>
       <section class="sort">
+        <p class="resuls-search">Найдено: 3</p>
         <h2>Сортировка:</h2>
-        <p class="resuls-search">Найдено:3</p>
         <div>
         <button type="button" class="choose choose-active">По цене</button>
         <button type="button" class="choose">По типу</button>
         <button type="button" class="choose">По рейтингу</button>
+        <div>
+          <button class="up-down up">
+          <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#81b3d2" d="M5.5 0L0 10h11z"/></svg></div>
+          <button class="up-down down"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#d5d5d5" d="M5.5 10L0 0h11"/></svg></div>
+        </div>
       </div>
       </section>
       <section class="found">
@@ -114,6 +121,7 @@
             </div>
            </div>
            <div class="inner-column-rating">
+             <div class="rating-visual rating-1"></div>
              <span class="rating">Рейтинг:8,5</span>
            </div>
          </li>
@@ -139,6 +147,7 @@
       </div>
         </div>
         <div class="inner-column-rating">
+          <div class="rating-visual rating-2"></div>
           <span class="rating">Рейтинг:8,9</span>
         </div>
           </li>
@@ -164,6 +173,7 @@
       </div>
         </div>
         <div class="inner-column-rating">
+          <div class="rating-visual rating-3"></div>
           <span class="rating">Рейтинг:9,2</span>
         </div>
           </li>

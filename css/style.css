@@ -247,7 +247,7 @@ padding-bottom: 56px;
   line-height: 18px;
   color: rgba(0, 0, 0, 0.3);
   border: none;
-  border-bottom: dotted;
+  border-bottom: 1px dotted;
   border-color: #81b3d2;
   background-color: white;
   text-transform: uppercase;
@@ -263,6 +263,37 @@ padding-bottom: 56px;
 .sort .choose-active{
   color:#81b3d2;
   border-bottom: none;
+}
+.sort{
+  position: relative;
+
+}
+.down{
+  position: absolute;
+  right:58px;
+  bottom: 34px;
+  width: 11px;
+  height: 10px;
+  background-color: transparent;
+  border: none;
+}
+.up{
+  right:35px;
+  position: absolute;
+  bottom: 34px;
+  width: 11px;
+  height: 10px;
+  background-color: transparent;
+  border: none;
+}
+.up-down:hover{
+  fill: #cdcdcd;
+}
+.up-down:focus{
+  fill: #2f2c2d;
+}
+.up-down:active{
+  fill: #8ebbd7;
 }
 .list-found{
   list-style: none;
@@ -693,7 +724,7 @@ fill: rgba(0, 0, 0, 0.3);
   display: block;
   width: 23px;
   height: 23px;
-  background-image: url(../img/checkbox-of.svg);
+  background-image: url(../img/checkbox-off.svg);
   position: absolute;
   left: -17px;
   top: -2px;
@@ -710,7 +741,15 @@ input:checked+label::before {
   top: -2px;
   background-position: contain;
 }
+.price-controls input {
+  width: 50px;
+  margin: 0;
 
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
 
 }
 /* .checkbox-on,
@@ -745,35 +784,110 @@ ul{
   border: none;
 }
 .cost-per-day legend{
-  margin-bottom: 16px;:
+  margin-bottom: 16px;
 }
+
 .price-controls{
   height: 36px;
   margin-bottom: 20px;
   border: 2px solid #ffffff;
   border-radius: 2px;
-    width: 318px;
+  font-size: 0;
+position: relative;
+}
+.price-controls::after {
+  content: "";
+  position: absolute;
 
+  width: 2px;
+  height: 22px;
+  top: 50%;
+  left: 50%;
+transform: translate(-50%, -50%);
+  background: #ffffff;
 }
 
 .price-controls label {
   display: inline-block;
   vertical-align: top;
   cursor: pointer;
+  width: 90px;
+    padding-left: 65px;
+    font-size: 16px;
+ line-height: 21px;
+ margin-top: 8px;
 
 }
 .price-controls .before,
 .price-controls .from {
- width: 20px;
-  padding-left: 65px;
-}
+    width: 50px;
+    margin: 0;
+
+    font-size: 16px;
+     line-height: 21px;
+
+    background: none;
+    border: none;
+  }
 .cost{
   border:none;
-  width: 50%;
+  max-width: 330px;
+
 
 }
 .range-group{
-  border:none;
+  position: relative;
+
+  margin-bottom: 32px;
+
+}
+.range-group .range {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+.range-group .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+.range-batton1,
+.range-batton2{
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    cursor: pointer;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  position: absolute;
+top: -9px;
+}
+.range-batton1{
+  left: 0;
+}
+.range-batton2{
+  left: 80%;
+}
+.range-batton1:hover,
+.range-batton2:hover {
+  background: #1c4f80;
+}
+.button-results {
+  display: block;
+
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
 }
 .from,
 .before{
@@ -790,9 +904,7 @@ ul{
   border-left: none;
 }
 .cost-per-day{
-
     border: none;
-
 }
 
 
@@ -825,21 +937,34 @@ bottom: 33px;
   min-height: 87px;
 }
 .sort h2{
-  order:0;
+
   margin: 0;
   margin-left: 32px;
   width: 100px;
 }
 .sort p{
-  order:-1;
+
   margin: 0;
   margin-left: 72px;
   min-width: 135px;
 }
-.sort .choose{
-  order:1;
+.rating-visual{
+  background-image: url(img/star.svg);
+  background-repeat: repeat;
+  width: 18px;
+  height: 17px;
+  fill:#9cc3db;
+  background-position: contain;
 }
-
+.rating-1{
+  width:100px;
+}
+.rating-2{
+  width:80px;
+}
+.rating-3{
+  width:40px;
+}
 .inner-column-results{
   display:flex;
   border-top: 1px solid #f9f9f9;
