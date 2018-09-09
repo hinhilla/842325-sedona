@@ -8,6 +8,7 @@ body {
   color: #000000;
   text-transform: uppercase;
   background-color: #f2f2f2;
+  position: relative;
 
 }
 .background-logo{
@@ -276,6 +277,7 @@ padding-bottom: 56px;
   height: 10px;
   background-color: transparent;
   border: none;
+  fill:#d5d5d5;
 }
 .up{
   right:35px;
@@ -285,15 +287,15 @@ padding-bottom: 56px;
   height: 10px;
   background-color: transparent;
   border: none;
+
 }
-.up-down:hover{
-  fill: #cdcdcd;
+.up-down:hover path{
+  fill: #242021;
 }
-.up-down:focus{
-  fill: #2f2c2d;
+.up-down:focus path{
+  fill: #83b4d3;
 }
-.up-down:active{
-  fill: #8ebbd7;
+
 }
 .list-found{
   list-style: none;
@@ -576,7 +578,7 @@ margin-right: auto;
 
 .map{
   width:100%;
-}
+  }
 
 .form-hotel-items{
   width:458px;
@@ -619,14 +621,26 @@ width: 176px;
 }
 .calendar{
   position: absolute;
-  right: 0;
-  top: 8px;
+  right: 2px;
+  top: 4px;
+}
+
+
+svg rect{
+  fill:#cacaca;
+}
+.calendar:hover path,
+.calendar:hover rect{
+  fill:#292929;
+}
+.calendar:focus path,
+.calendar:focus rect{
+  fill:#b3d1e4;
 }
 .form1 label,
 .form2 label{
 
   width:113px;
-
 }
 .search{
   padding-top: 20px;
@@ -635,6 +649,7 @@ width: 176px;
  .main-footer{
   display: flex;
   text-align: center;
+  width: 1200px;
 }
 .hashtag{
   width: 33%;
@@ -684,6 +699,16 @@ background-color: rgba(84, 150, 189, 1);
 }
 .social-button:focus path{
 fill: rgba(0, 0, 0, 0.3);
+}
+.academy path{
+  fill:#3a3637;
+}
+
+.academy:hover path{
+  fill:#9cc3db;
+}
+.academy:focus path{
+  fill:#dbdadb;
 }
 
 
@@ -822,63 +847,62 @@ transform: translate(-50%, -50%);
 .price-controls .from {
     width: 50px;
     margin: 0;
-
     font-size: 16px;
-     line-height: 21px;
-
+    line-height: 21px;
     background: none;
     border: none;
   }
-.cost{
+.inner-column .cost{
   border:none;
   max-width: 330px;
-
+margin-left: auto;
 
 }
 .range-group{
   position: relative;
-
-  margin-bottom: 32px;
+border: none;
 
 }
 .range-group .range {
   height: 2px;
-
   background: rgba(255, 255, 255, 0.3);
+  margin-bottom: 34px;
+
 }
 .range-group .bar {
   width: 80%;
   height: 2px;
-
   background: #ffffff;
 }
 .range-batton1,
 .range-batton2{
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
-    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
-    cursor: pointer;
-  background: #ababab;
-  border: 8px solid #ffffff;
-  position: absolute;
-top: -9px;
+  background-image: url(../img/filter-button.svg);
+  width: 20px;
+  height: 22px;
+  fill:#ABABAB;
+  position:absolute;
 }
+.range-batton1:hover,
+.range-batton2:hover{
+  background-image: url(../img/filter-button-b.svg);
+  width: 22px;
+  height: 24px;
+}
+
 .range-batton1{
+  top: -9px;
   left: 0;
 }
 .range-batton2{
+  top: -9px;
   left: 80%;
 }
-.range-batton1:hover,
-.range-batton2:hover {
-  background: #1c4f80;
-}
+
 .button-results {
   display: block;
 
   padding: 6px 35px;
-
+margin: 0 auto;
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
@@ -911,16 +935,9 @@ top: -9px;
 
 
 .inner-column{
-  position: relative;
   min-height: 217px;
 }
-.button-results{
-position: absolute;
-width: 135px;
-height:35;
-right: 260px;
-bottom: 33px;
-}
+
 
 
 .range{
@@ -949,21 +966,19 @@ bottom: 33px;
   min-width: 135px;
 }
 .rating-visual{
-  background-image: url(img/star.svg);
-  background-repeat: repeat;
+  background-image: url(../img/star.svg);
+  background-repeat: no-repeat;
   width: 18px;
   height: 17px;
   fill:#9cc3db;
   background-position: contain;
 }
-.rating-1{
-  width:100px;
-}
-.rating-2{
-  width:80px;
-}
-.rating-3{
-  width:40px;
+.rating-visual,
+.stars{
+  display: flex;
+  justify-content: flex-end;
+  max-width: 110px;
+
 }
 .inner-column-results{
   display:flex;
@@ -1010,4 +1025,31 @@ div span{
 .footer-social{
   display: flex;
 
+}
+.main-footer{
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  bottom: 5px;
+}
+.minus,
+.plus{
+  color:#cbcbcb;
+  margin: auto;
+  line-height: 26px;
+}
+
+.plus:hover,
+.minus:hover{
+  color:#292929;
+}
+.plus:active,
+.minus:active{
+  color:#b3d1e4;
+}
+.main-footer-second{
+  display: flex;
+  text-align: center;
+}
+.main-footer-second div{
+  width: 33%;
 }
