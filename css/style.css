@@ -250,6 +250,7 @@ color:#928a85;
 .form-hotel,.form-hotel input {
 font-size:14px;
 line-height:26px;
+
 }
 
 .form-hotel {
@@ -264,6 +265,9 @@ background-color:#f2f2f2;
 border:0;
 min-height:36px;
 font:inherit;
+padding-left: 10px;
+text-transform: uppercase;
+padding-bottom: 0;
 }
 
 input:active,input:focus,input:hover {
