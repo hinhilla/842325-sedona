@@ -1,42 +1,38 @@
 var button = document.querySelector(".button-search");
 var popup = document.querySelector(".form-hotel");
-var form = popup.querySelector("form-hotel-items");
-var date-in = popup.querySelector("[name=date-in]");
-var date-out = popup.querySelector("[name=date-out]");
+var form = popup.querySelector(".form-hotel-items");
+var dateIn = popup.querySelector("[name=date-in]");
+var dateOut = popup.querySelector("[name=date-out]");
+
 var isStorageSupport = true;
 var storage = "";
-
   try {
     storage = localStorage.getItem("date-in");
     storage = localStorage.getItem("date-out");
   } catch (err) {
     isStorageSupport = false;
-  }
+  };
 
 
 
-button.addEventListiner("click",function(evt)){
+button.addEventListener("click", function (evt) {
 evt.preventDefault();
-popup.classlist.toggle("form-hotel-show");
-}
-if (storage) {
-      date-in.value = storage;
-      date-out.value = storage;
-    }
+popup.classList.toggle("form-hotel-show");
+} if (storage) {
+      dateIn.value = storage;
+      dateOut.value = storage;
+    });
 
 form.addEventListener("submit", function (evt) {
-if (!date-in.value || !date-out.value) {
+if (!dateIn.value || !dateOut.value) {
 evt.preventDefault();
-popup.classList.remove("modal-error");
-      popup.offsetWidth = popup.offsetWidth;
 popup.classList.add("modal-error");
-    }else {
-      if(isStorageSupport) {
-      localStorage.setItem("date-in", date-in.value);
-      localStorage.setItem("date-out", date-out.value);
+    } else {
+      if (isStorageSupport) {
+      localStorage.setItem("date-in", dateIn.value);
+      localStorage.setItem("date-out", dateOut.value); }
 }
-}
-}
+});
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
