@@ -95,14 +95,6 @@ height:59px;
 background-image:url(../img/polygon.png);
 }
 
-.visually-hidden {
-position:absolute;
-clip:rect(0000);
-width:1px;
-height:1px;
-margin:-1px;
-}
-
 .filtres {
 font-size:14px;
 line-height:21px;
@@ -294,7 +286,7 @@ color:#a9a9a9;
 font-size:14px;
 line-height:26px;
 cursor:pointer;
-transition: 0.3;
+transition: 0.3s;
 }
 
 .search {
@@ -330,7 +322,7 @@ border-radius:2px;
 cursor:pointer;
 margin:0 auto;
 padding:7px 32px;
-transition: 0.3;
+transition: 0.3s;
 }
 
 .button-results:hover {
@@ -395,7 +387,7 @@ height:10px;
 background-color:transparent;
 border:0;
 cursor:pointer;
-transition: 0.3;
+transition: 0.3s;
 }
 
 .down {
