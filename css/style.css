@@ -864,6 +864,8 @@ background:#fff;
 }
 
 .range-batton1,.range-batton2 {
+background: transparent;
+border:none;
 background-image:url(../img/filter-button.svg);
 background-repeat:no-repeat;
 width:20px;
