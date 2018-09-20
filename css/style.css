@@ -138,7 +138,7 @@ padding-right:71px;
 display:flex;
 margin:0;
 cursor:pointer;
-transition: 0.3;
+transition: 0.3s;
 }
 
 .site-navigation .hotel-active {
@@ -387,8 +387,7 @@ color:#81b3d2;
 border:0;
 }
 
-.down,
-.up {
+.down, .up {
 position:absolute;
 bottom:9px;
 width:11px;
@@ -779,6 +778,7 @@ padding-left:17px;
 .label-for-checkbox {
 padding-left:20px;
 font-weight:400;
+cursor: pointer;
 }
 
 .price-controls input {
@@ -880,12 +880,14 @@ fill:#ababab;
 position:absolute;
 }
 
-.range-batton1:hover,.range-batton2:hover {
+.range-batton1:hover,.range-batton2:hover, .range-batton1:focus,.range-batton2:focus {
 -webkit-transform:scale(1.1);
 -ms-transform:scale(1.1);
 transform:scale(1.1);
 width:22px;
 height:24px;
+cursor:pointer;
+transition: 0.3s;
 }
 
 .range-batton1 {
