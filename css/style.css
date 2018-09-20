@@ -35,7 +35,7 @@ fill:#a9a9a9;
 fill:#3a3637;
 }
 
-.checkbox label::before {
+.label-for-checkbox::before {
 content:'';
 display:block;
 width:23px;
@@ -49,7 +49,7 @@ background-size:contain;
 
 }
 
-input:checked+label::before {
+input:checked+.label-for-checkbox::before {
 content:'';
 display:block;
 width:27px;
@@ -313,7 +313,7 @@ padding-bottom:15px;
 
 .search:focus {
 background-color:#5496bd;
-color:rgba(255,255,255,0,3);
+color:rgba(255,255,255,0.3);
 }
 
 .button-results {
@@ -387,7 +387,8 @@ color:#81b3d2;
 border:0;
 }
 
-.down,.up {
+.down,
+.up {
 position:absolute;
 bottom:9px;
 width:11px;
@@ -534,6 +535,11 @@ width:33.333%;
 padding:47px 10px 14px 9px;
 }
 
+.advice-list-items
++ p{
+margin: 0 auto;
+}
+
 .feature-grey-items h3 {
 max-width:120px;
 margin-top:0;
@@ -541,7 +547,6 @@ margin-top:0;
 
 .paragraph1 {
 margin-left:45px;
-/* margin-right:38px; */
 max-width: 306px;
 }
 
@@ -751,7 +756,9 @@ padding-right:10px;
 padding:28px 69px 15px 72px;
 }
 
-.inner-column legend {
+.infrastructure>legend,
+.type-of-housing>legend,
+.cost-per-day>legend {
 font-size:16px;
 line-height:21px;
 font-weight:700;
@@ -769,7 +776,7 @@ margin-bottom:25px;
 padding-left:17px;
 }
 
-.checkbox label {
+.label-for-checkbox {
 padding-left:20px;
 font-weight:400;
 }
@@ -783,17 +790,12 @@ border:0;
 margin:0;
 }
 
-.checkbox label,{
+.label-for-checkbox {
 position:relative;
 }
 
-.checkbox svg:hover {
-fill:#fff;
-}
-
-.checkbox svg:focus,
-.checkbox svg:active {
-opacity:0.3;
+input:disabled+.label-for-checkbox::before {
+opacity: 0.5;
 }
 
 .infrastructure,.type-of-housing {
@@ -1071,6 +1073,7 @@ padding:0;
 .advice-list,.feature-blue,.form1,.form2,.form3,.form4,.footer-copyright,.inner-column,.inner-column-results,.rating-visual,.stars,.mini-column,.footer-social,.social-button {
 display:flex;
 }
+
 .form-hotel-show {
   display:block;
   animation: bounce 0.6s;
@@ -1108,10 +1111,12 @@ display:flex;
     transform: translateX(10px);
   }
 }
+
 .modal-error {
   animation: shake 0.6s;
 }
-iframe{
+
+iframe {
   position:absolute;
   left: 0;
   top:0;
