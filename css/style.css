@@ -789,8 +789,9 @@ position:relative;
 fill:#fff;
 }
 
-.checkbox svg:focus {
-fill:#656666;
+.checkbox svg:focus,
+.checkbox svg:active {
+opacity:0.3;
 }
 
 .infrastructure,.type-of-housing {
