@@ -18,10 +18,10 @@ var storage = "";
 button.addEventListener("click", function (evt) {
 evt.preventDefault();
 popup.classList.toggle("form-hotel-show");
-} if (storage) {
+ if (storage) {
       dateIn.value = storage;
       dateOut.value = storage;
-    });
+    }});
 
 form.addEventListener("submit", function (evt) {
 if (!dateIn.value || !dateOut.value) {
@@ -30,7 +30,8 @@ popup.classList.add("modal-error");
     } else {
       if (isStorageSupport) {
       localStorage.setItem("date-in", dateIn.value);
-      localStorage.setItem("date-out", dateOut.value); }
+      localStorage.setItem("date-out", dateOut.value);
+    }
 }
 });
 
